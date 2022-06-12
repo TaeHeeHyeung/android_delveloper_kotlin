@@ -1,8 +1,7 @@
-package com.example.myapplication
+package com.example.kotlin
 
 import android.os.Parcel
 import android.os.Parcelable
-import androidx.annotation.Nullable
 
 public class Account() : Parcelable {
     lateinit var name: String
