@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".viewbinding.TestActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
@@ -28,7 +31,8 @@
             android:authorities="${applicationId}.androidx-startup"
             android:exported="false"
             tools:node="merge">
-            <meta-data android:name="com.example.ExampleLoggerInitializer"
+            <meta-data
+                android:name="com.example.ExampleLoggerInitializer"
                 tools:node="remove" />
         </provider>
     </application>

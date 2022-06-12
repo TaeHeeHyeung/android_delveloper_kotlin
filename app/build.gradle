@@ -29,6 +29,16 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    //Android 4.0 이상
+    buildFeatures {
+        viewBinding = true
+    }
+
+    //Android 3.6 이상
+    viewBinding {
+        enabled = true
+    }
 }
 
 dependencies {
